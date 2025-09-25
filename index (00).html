@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniChat - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>UniChat - تسجيل الدخول</h1>
+  </header>
+
+  <!-- شاشة تسجيل الدخول -->
+  <main class="login-container">
+    <input type="text" id="phone" placeholder="أدخل رقم الهاتف (+967...)">
+    <button id="loginBtn">إرسال الكود</button>
+
+    <div id="otpSection" style="display:none;">
+      <input type="text" id="otpCode" placeholder="أدخل كود التحقق">
+      <button id="verifyBtn">تحقق</button>
+    </div>
+  </main>
+
+  <!-- Firebase CDN -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
